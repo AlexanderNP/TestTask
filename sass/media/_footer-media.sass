@@ -1,0 +1,51 @@
+@media (max-width: 768px)
+  .footer
+    &__inner
+      padding: 91px 0px 25px 0
+    &__bottom
+      padding-top: 50px
+
+    &__top
+      flex-direction: column
+      &-left
+        margin-bottom: 50px
+
+    &__list
+      flex-direction: column
+      align-items: center
+      margin-bottom: 30px
+
+      &-item:nth-child(n)
+        margin-right: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 35px
+
+      &-item
+        p
+          max-width: 300px
+
+    &__logo
+      display: flex
+      justify-content: center
+      margin-bottom: 20px
+
+    &__list-info
+      display: flex
+      flex-direction: column
+      align-items: center
+    
+    &__info-item
+      margin-bottom: 16px
+    
+    &__item-title
+      margin-bottom: 20px
+
+    &__paragraph
+      text-align: center
+
+@media (max-width: 480px)
+  .footer
+    &__inner
+      border-radius: 0px 100px 0px 0px

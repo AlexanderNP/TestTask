@@ -1,0 +1,61 @@
+.main__client
+  color: #FFF
+  padding: 96px 0 125px 0
+  border-radius: 200px 0px 0px 0px
+  background: $btn-background
+
+.client
+
+  &__top
+    display: flex
+    margin-bottom: 123px
+
+  &__heading
+    width: 100%
+    max-width: 228px
+    margin-right: 97px
+
+  &__title
+    @extend %title
+
+  &__desc
+    max-width: 540px
+
+  &__text
+    opacity: 0.6
+    font-weight: 400
+    line-height: 162.5%
+    letter-spacing: 0.8px
+
+  &__list
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+
+    &-item
+      font-size: 20px
+      font-weight: 600
+      line-height: 230%
+      letter-spacing: 0.4px
+      text-transform: uppercase
+      padding: 41px 46px
+      white-space: nowrap
+      text-align: center
+    
+    &-item:nth-child(-n+4)
+      border-bottom: 1px solid rgba(#fff, 0.4)
+    
+    &-item:nth-child(4n+1)
+      border-right: 1px solid rgba(#fff, 0.4)
+    
+    &-item:nth-child(4n)
+      border-left: 1px solid rgba(#fff, 0.4)
+    
+    &-item:nth-child(3)
+      border-left: 1px solid rgba(#fff, 0.4)
+    
+    &-item:nth-child(7)
+      border-left: 1px solid rgba(#fff, 0.4)
+
+    &-item:last-child
+      text-transform: capitalize
+      background: rgba($hero-blue, 0.2)

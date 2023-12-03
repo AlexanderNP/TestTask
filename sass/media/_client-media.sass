@@ -1,0 +1,52 @@
+@media (max-width: 1024px)
+  .client
+    &__top
+      flex-direction: column
+      align-items: center
+    &__heading
+      text-align: center
+      max-width: none
+      margin-right: 0
+      margin-bottom: 50px
+    &__list
+      grid-template-columns: repeat(2, 1fr)
+
+      &-item:nth-child(n)
+        border: none
+
+      &-item:nth-child(2n+1)
+        border-right: 1px solid rgba(#fff, 0.4)
+        border-bottom: 1px solid rgba(#fff, 0.4)
+
+      &-item:nth-child(2n)
+        border-bottom: 1px solid rgba(#fff, 0.4)
+
+      &-item:nth-child(7)
+        border-bottom: none
+
+      &-item:nth-child(8)
+        border-bottom: none
+
+@media (max-width: 768px)
+  .client
+    &__top
+      margin-bottom: 50px
+    &__bottom
+      margin: 0 auto
+    &__list
+      margin: 0 auto
+      display: flex
+      flex-direction: column
+      max-width: 500px
+
+      &-item:nth-child(n)
+        border-right: none
+        border-bottom: 1px solid rgba(#fff, 0.4)
+
+      &-item:nth-child(8)
+        border-bottom: none
+
+@media (max-width: 480px)
+  .main__client
+    padding: 75px 0 100px 0
+    border-radius: 100px 0px 0px 0px

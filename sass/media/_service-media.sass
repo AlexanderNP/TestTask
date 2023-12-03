@@ -1,0 +1,30 @@
+@media (max-width: 1024px)
+  .main__service
+    padding: 100px 0
+
+  .service
+
+    &__inner
+      flex-direction: column
+      align-items: center
+    
+    &__heading
+      margin-bottom: 30px
+    &__cart--left
+      margin-left: 0
+      margin-bottom: 100px
+
+@media (max-width: 480px)
+
+  .service
+    &__heading
+      max-width: 300px
+
+    &__cart
+      padding: 24px
+      max-width: 300px
+
+      &-img-box::before 
+        left: -7%
+        top: -30%
+        width: 300px

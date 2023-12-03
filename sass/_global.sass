@@ -1,0 +1,31 @@
+html,body
+  font-family: 'Gilroy', sans-serif
+
+.wrapper
+  min-height: 100%
+  width: 100%
+  overflow: hidden
+
+.background
+  background: linear-gradient(0deg, #98c3e831 8.84%, rgba(152, 195, 232, 0.00) 31.12%)
+  padding-bottom: 55px
+
+.header
+  padding: 48px 0 20px 0
+
+.footer
+  color: #fff
+  background: linear-gradient(to right, $blue-2 0%, $blue-2 50%, $btn-background 50%)
+
+.container
+  @include container(970px)
+
+.container--header, .container--footer
+  @include container(1246px)
+
+.button
+  @extend %btn
+
+.body--modal
+  overflow-y: hidden
+

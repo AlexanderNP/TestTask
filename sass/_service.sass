@@ -1,0 +1,87 @@
+.main__service
+  padding: 192px 0 212px 0
+
+.service
+
+  &__inner
+    display: flex
+    justify-content: space-between
+
+  &__heading
+    max-width: 360px
+    margin-bottom: 158px
+
+  &__title
+    @extend %title
+    color: $blue-2
+
+  &__cart
+    max-width: 380px
+    display: flex
+    flex-direction: column
+    border-radius: 10px
+    box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.20)
+    padding: 48px
+    
+    &-img-box
+      display: flex
+      align-items: center
+      position: relative
+      justify-content: center
+
+    &-img-box::before
+      content: ''
+      display: block
+      position: absolute
+      top: -35%
+      left: -5%
+      background: url("../public/images/what-we-do/2-icon.svg") no-repeat
+      width: 320px
+      height: 320px
+      background-size: contain
+
+    &-img
+      align-self: center
+      width: 180px
+      margin-bottom: 56px
+
+    &-title
+      color: $hero-blue
+      font-size: 20px
+      font-weight: 600
+      line-height: 150%
+      letter-spacing: 1px
+      margin-bottom: 16px
+
+    &-text
+      color: $hero-blue
+      font-weight: 400
+      line-height: 162.5%
+      letter-spacing: 0.8px
+      margin-bottom: 32px
+      opacity: 0.6
+
+    &-link
+      display: flex
+      align-items: center
+
+    &-link span
+      color: $btn-background
+      font-size: 14px
+      font-weight: 600
+      line-height: 214.286%
+      letter-spacing: 0.7px
+      margin-right: 24px
+    
+    &-icon
+      width: 24px
+      transition: transform .2s ease-in-out
+
+    &-icon:hover
+      transform: scale(1.1)
+
+  &__cart:nth-child(1)
+    margin-bottom: 100px
+  
+  &__cart--left
+    margin-left: 80px
